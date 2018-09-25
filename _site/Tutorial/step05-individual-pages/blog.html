@@ -16,7 +16,7 @@
   limitations under the License
 -->
 <html lang="en">
-<!--
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,43 +24,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>MDL-Static Website</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.0.6/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
--->
-{% include head.html %}
+
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Simple portfolio website</span>
-                </span>
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout__title">Simple Portfolio Layout</span>
             </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <div class="mdl-layout__header-row portfolio-navigation-row">
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                     <a class="mdl-navigation__link" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link  is-active" href="blog.html">Blog</a>
+                    <a class="mdl-navigation__link is-active" href="blog.html">Blog</a>
                     <a class="mdl-navigation__link" href="about.html">About</a>
                     <a class="mdl-navigation__link" href="contact.html">Contact</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <span class="mdl-layout__title">Simple Portfolio Layout</span>
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                <a class="mdl-navigation__link" href="#">Portfolio</a>
+                <a class="mdl-navigation__link" href="#">Blog</a>
+                <a class="mdl-navigation__link" href="#">About</a>
+                <a class="mdl-navigation__link" href="#">Contact</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="mdl-grid portfolio-max-width">
                 <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
                     <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
-                        <img class="article-image" src=" images/example-blog01.jpg" border="0" alt="">
+                        <img class="article-image" src=" ../../images/example-blog01.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-cell mdl-cell--8-col">
                         <h2 class="mdl-card__title-text">Velit anim eiusmod labore sit amet</h2>
@@ -82,7 +79,7 @@
                         <h2 class="mdl-card__title-text">Voluptate voluptate</h2>
                     </div>
                     <div class="mdl-card__media">
-                        <a href="#"> <img class="article-image" src=" images/example-blog02.jpg" border="0" alt=""></a>
+                        <a href="#"> <img class="article-image" src=" ../../images/example-blog02.jpg" border="0" alt=""></a>
                     </div>
                     <div class="mdl-card__supporting-text no-bottom-padding">
                         <span>Posted 2 days ago</span>
@@ -103,7 +100,7 @@
                 </div>
                 <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
                     <div class="mdl-card__media">
-                        <a href="#"> <img class="article-image" src=" images/example-blog04.jpg" border="0" alt=""></a>
+                        <a href="#"> <img class="article-image" src=" ../../images/example-blog04.jpg" border="0" alt=""></a>
                     </div>
                     <div class="mdl-card__supporting-text">
                         <small>Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit.</small>
@@ -143,7 +140,7 @@
                 </div>
                 <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp portfolio-blog-card-compact">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-blog07.jpg" border="0" alt="">
+                        <img class="article-image" src=" ../../images/example-blog07.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title ">
                         <h2 class="mdl-card__title-text">Loren</h2>
@@ -158,10 +155,20 @@
                     </div>
                 </div>
             </div>
-            {% include footer.html %}
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Simple portfolio website</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
         </main>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.getmdl.io/1.0.6/material.min.js"></script>
 </body>
 
 </html>
